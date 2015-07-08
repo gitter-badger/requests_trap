@@ -9,12 +9,12 @@
       %br
       If a Req App user gives this URL to the PayPal service:
       %br
-      %pre http://requests-trap.com/shop
+      %pre= "#{host_name}/shop"
       %br
       Then the user could see the IPN notifications sent by PayPal here:
       %br
-      %pre http://requests-trap.com/shop/requests
+      %pre= "#{host_name}/shop/requests"
       %br
       The user can choose any url, all the requests made to that url can be viewed by anyone that knows the url, so he can use hard-to-guess urls to avoid that:
       %br
-      %pre http://requests-trap.com/mysupersecreturlxj34
+      %pre= "#{host_name}/mysupersecreturlxj34"

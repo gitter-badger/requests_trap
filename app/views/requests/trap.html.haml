@@ -1,0 +1,9 @@
+.row
+  .col-md-9
+    %h2
+      Trap -
+      = params[:trap_id]
+    %p
+      - @request.attributes.each do |attr|
+        = "#{attr[0]} = #{attr[1]}"
+        %br
