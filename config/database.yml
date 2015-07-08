@@ -14,7 +14,7 @@ development:
   <<: *default
   database: requests_trap_development
   username: postgres
-  password: 19031984eE&
+  password:
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,6 +23,6 @@ test: &test
   <<: *default
   database: requests_trap_test
   username: postgres
-  password: 19031984eE&
+  password:
 cucumber:
   <<: *test

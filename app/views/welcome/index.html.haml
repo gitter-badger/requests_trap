@@ -3,9 +3,9 @@
     %p
       A tool for capture and display HTTP requests.
       %br
-      This simple tool is useful during the development of apps that integrate with external services, such as http clients, webhooks,?etc. The Requests Trap app ('Req App') provides these services with an endpoint to which they can send requests and notifications.
+      This simple tool is useful during the development of apps that integrate with external services, such as http clients, webhooks, etc. The Requests Trap app provides these services with an endpoint to which they can send requests and notifications.
     %p
-      For example, let's assume we are developing an ecommerce site named "Shop" with PayPal integration. During development, Shop can use Req App to see PayPal requests via a specific endpoint.
+      For example, let's assume we are developing an e-commerce site named "Shop" with PayPal integration. During development, Shop can use Req App to see PayPal requests via a specific endpoint.
       %br
       If a Req App user gives this URL to the PayPal service:
       %br
@@ -18,3 +18,10 @@
       The user can choose any url, all the requests made to that url can be viewed by anyone that knows the url, so he can use hard-to-guess urls to avoid that:
       %br
       %pre= "#{host_name}/mysupersecreturlxj34"
+      %br
+      =@some
+  .col-md-3
+    %h4 Available traps
+    - @requests.each do |req|
+      = link_to req.trap_id, requests_path(req.trap_id)
+      %br

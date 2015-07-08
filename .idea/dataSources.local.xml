@@ -3,15 +3,12 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Rails requests_trap: development" uuid="400e5379-5980-4753-93dd-e00f02c1e178">
       <user-name>postgres</user-name>
-      <user-password>df9bdf93df9adf99df9bdf93df92df9edfcfdfefdf8c</user-password>
     </data-source>
     <data-source name="Rails requests_trap: test" uuid="2d333c6b-7242-470a-8d18-4763590ff891">
       <user-name>postgres</user-name>
-      <user-password>df9bdf93df9adf99df9bdf93df92df9edfcfdfefdf8c</user-password>
     </data-source>
     <data-source name="Rails requests_trap: cucumber" uuid="8a2a9f65-d362-41ee-8a8d-1705be634ae7">
       <user-name>postgres</user-name>
-      <user-password>df9bdf93df9adf99df9bdf93df92df9edfcfdfefdf8c</user-password>
     </data-source>
   </component>
 </project>

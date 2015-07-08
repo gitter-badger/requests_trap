@@ -1,21 +1,26 @@
 .row
   .col-md-12
-    #link= link_to "Reload", requests_path, :remote => true
+    = link_to "Back", root_path
+    #link
+      = link_to requests_path, :remote => true do
+        Reload
+        %span.glyphicon.glyphicon-refresh
 
     %h3
       Trapped requests for
       %strong= "/#{params[:trap_id]}/"
     %br
-    %table.table.table-condensed
-      %thead
-        %tr
-          %th Date
-          %th Remote IP
-          %th Request method
-          %th Scheme
-          %th Query-string
-          %th Query-params
-          %th Cookies
-          %th Headers
-      %tbody
-        = render :partial => "table", :collection => @requests
+    .table-responsive
+      %table.table.table-condensed
+        %thead
+          %tr
+            %th Date
+            %th Remote IP
+            %th Request method
+            %th Scheme
+            %th Query-string
+            %th Query-params
+            %th Cookies
+            %th Headers
+        %tbody
+          = render :partial => "table", :collection => @requests
