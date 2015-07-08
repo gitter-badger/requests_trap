@@ -1,0 +1,19 @@
+.row
+  .col-md-12
+    %h2
+      Trapped requests for
+      %strong= params[:trap_id]
+
+    %table.table.table-condensed
+      %thead
+        %tr
+          %th Date
+          %th Remote IP
+          %th Request method
+          %th Scheme
+          %th Query-string
+          %th Query-params
+          %th Cookies
+          %th Headers
+      %tbody
+        = render :partial => "table", :collection => @requests

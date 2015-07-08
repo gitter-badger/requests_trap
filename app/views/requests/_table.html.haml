@@ -1,0 +1,13 @@
+%tr
+  %td= table.created_at.strftime "%-d %B'%y %H:%M:%S %:z"
+  %td= table.remote_ip
+  %td= table.method
+  %td= table.scheme
+  %td
+    %p.min= table.query_string
+  %td
+    %p.min= table.query_params
+  %td
+    %p.min= table.cookies
+  %td
+    %p.min= table.headers

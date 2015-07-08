@@ -20,4 +20,12 @@ class RequestsController < ApplicationController
       end
     end
   end
+
+  def index
+    @requests = Request.trapped_by(params[:trap_id]).order("created_at DESC")
+
+    respond_to do |format|
+      format.html
+    end
+  end
 end

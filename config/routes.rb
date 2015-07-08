@@ -10,6 +10,11 @@ Rails.application.routes.draw do
 
   match ':trap_id', to: 'requests#trap', via: :all
 
+  scope ':trap_id' do
+    get 'requests', to: 'requests#index'
+    get 'requests/:id', to: 'requests#show'
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
