@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   scope ':trap_id' do
     get 'requests', to: 'requests#index'
-    get 'requests/:id', to: 'requests#show'
+    get 'requests/:id', to: 'requests#show', :as => :request
   end
 
   # Example of regular route:

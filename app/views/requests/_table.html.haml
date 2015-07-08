@@ -1,5 +1,5 @@
 %tr
-  %td= table.created_at.strftime "%-d %B'%y %H:%M:%S %:z"
+  %td= link_to table.created_at.strftime("%-d %B'%y %H:%M:%S %:z"), request_path(:id => table.id)
   %td= table.remote_ip
   %td= table.method
   %td= table.scheme

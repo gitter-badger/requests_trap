@@ -28,4 +28,12 @@ class RequestsController < ApplicationController
       format.html
     end
   end
+
+  def show
+    @request = Request.find(params[:id])
+
+    respond_to do |format|
+      format.html
+    end
+  end
 end

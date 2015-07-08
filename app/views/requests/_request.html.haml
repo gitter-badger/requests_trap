@@ -1,0 +1,28 @@
+%h3= "Request id:#{request.id} for /#{params[:trap_id]}/"
+%hr
+%p
+%dl.dl-horizontal
+  %dt Request Date
+  %dd= request.created_at.strftime "%-d %B'%y %H:%M:%S %:z"
+%dl.dl-horizontal
+  %dt Remote IP
+  %dd= request.remote_ip
+%dl.dl-horizontal
+  %dt Request method
+  %dd= request.method
+%dl.dl-horizontal
+  %dt Scheme
+  %dd= request.scheme
+%dl.dl-horizontal
+  %dt Query-string
+  %dd= request.query_string
+%dl.dl-horizontal
+  %dt Query-params
+  %dd= request.query_params
+%dl.dl-horizontal
+  %dt Cookies
+  %dd
+    %p= request.cookies
+%dl.dl-horizontal
+  %dt Headers
+  %dd= request.headers
