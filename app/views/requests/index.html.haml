@@ -1,5 +1,7 @@
 .row
   .col-md-12
+    #link= link_to "Reload", requests_path, :remote => true
+
     %h3
       Trapped requests for
       %strong= "/#{params[:trap_id]}/"
