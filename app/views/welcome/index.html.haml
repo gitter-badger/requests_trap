@@ -1,0 +1,20 @@
+.row
+  .col-md-9
+    %p
+      A tool for capture and display HTTP requests.
+      %br
+      This simple tool is useful during the development of apps that integrate with external services, such as http clients, webhooks,?etc. The Requests Trap app ('Req App') provides these services with an endpoint to which they can send requests and notifications.
+    %p
+      For example, let's assume we are developing an ecommerce site named "Shop" with PayPal integration. During development, Shop can use Req App to see PayPal requests via a specific endpoint.
+      %br
+      If a Req App user gives this URL to the PayPal service:
+      %br
+      %pre http://requests-trap.com/shop
+      %br
+      Then the user could see the IPN notifications sent by PayPal here:
+      %br
+      %pre http://requests-trap.com/shop/requests
+      %br
+      The user can choose any url, all the requests made to that url can be viewed by anyone that knows the url, so he can use hard-to-guess urls to avoid that:
+      %br
+      %pre http://requests-trap.com/mysupersecreturlxj34

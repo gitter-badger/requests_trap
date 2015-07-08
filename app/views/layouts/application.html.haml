@@ -5,5 +5,22 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    .container
+      %h1 Requests Trap App
 
-    = yield
+    .container
+      .row
+        .col-sm-8.col-sm-offset-2
+          - if notice
+            %p.notice.alert.alert-info
+              = notice
+              = button_tag :class => 'close', :type => 'button', 'data-dismiss' => 'alert', 'aria-label' => 'Close' do
+                %span &times
+          - if alert
+            %p.alert.alert-danger.alert-dismissible
+              = alert
+              = button_tag :class => 'close', :type => 'button', 'data-dismiss' => 'alert', 'aria-label' => 'Close' do
+                %span &times
+
+    .container
+      = yield
