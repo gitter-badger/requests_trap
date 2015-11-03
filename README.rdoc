@@ -1,5 +1,7 @@
 == README
 
+{<img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/edwardbako/requests_trap">}[https://gitter.im/edwardbako/requests_trap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge]
+
 A tool for capture and display HTTP requests. 
 This simple tool is useful during the development of apps that integrate with external services, such as http clients, webhooks, etc. The Requests Trap app provides these services with an endpoint to which they can send requests and notifications.
 
